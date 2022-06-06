@@ -1,7 +1,9 @@
-<div class="custom-text-section">
-    <h2> {{ section.settings.custom_text_title }} </h2>
+{{ 'section-coffee-banner.css' | asset_url | stylesheet_tag }}
+
+<div class="coffee-banner custom-text-section">
+    <div> {{ section.settings.custom_text_title }} </div>
     <div>{{ section.settings.custom_text_body }}</div>
-  </div>
+</div>
 
 {% schema %}
   {
@@ -22,7 +24,7 @@
     ],
     "presets": [
       {
-        "name": "custom-text",
+        "name": "Coffee-Banner",
         "category": "Custom"
       }
     ]
