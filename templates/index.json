@@ -1,5 +1,12 @@
 {
   "sections": {
+    "1654531800829f4636": {
+      "type": "coffee-banner",
+      "settings": {
+        "custom_text_title": "Title",
+        "custom_text_body": "<p>Add your text here<\/p>"
+      }
+    },
     "rich_text": {
       "type": "rich-text",
       "blocks": {
@@ -163,6 +170,7 @@
     }
   },
   "order": [
+    "1654531800829f4636",
     "rich_text",
     "featured_collection",
     "collage",
