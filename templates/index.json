@@ -4,6 +4,7 @@
       "type": "coffee-banner",
       "settings": {
         "custom_text_title": "Title",
+        "image": "shopify:\/\/shop_images\/roasted-coffee-g8291a7a5b_1920.jpg",
         "custom_text_body": "<p>Add your text here<\/p>"
       }
     },
