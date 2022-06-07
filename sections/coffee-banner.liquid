@@ -1,8 +1,15 @@
 {{ 'section-coffee-banner.css' | asset_url | stylesheet_tag }}
 
 <div class="coffee-banner custom-text-section">
-    <div> {{ section.settings.custom_text_title }} </div>
-    <div>{{ section.settings.custom_text_body }}</div>
+    <div> 
+    {{ section.settings.custom_text_title }}
+    {{ section.settings.custom_text_body }}
+  </div>
+  {% if section.settings.image != blank %}
+    {{section.settings.image | image_url: width: 1500 | image_tag}}
+  {% else %}
+    Hi Stranger!
+  {% endif %}
     
 </div>
 
