@@ -1,4 +1,6 @@
 .coffee-banner {
     display: flex;
     background-color: yellow;
+    justify-content: center;
+    align-items: center;
 }

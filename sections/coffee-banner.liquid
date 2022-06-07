@@ -3,17 +3,23 @@
 <div class="coffee-banner custom-text-section">
     <div> {{ section.settings.custom_text_title }} </div>
     <div>{{ section.settings.custom_text_body }}</div>
+    
 </div>
 
 {% schema %}
   {
-    "name": "Text Box",
+    "name": "Coffee Banner",
     "settings": [
       {
         "id": "custom_text_title",
         "type": "text",
         "label": "Text box heading",
         "default": "Title"
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Test"
       },
       {
         "id": "custom_text_body",
