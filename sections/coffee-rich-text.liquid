@@ -1,5 +1,14 @@
+{{ 'section-coffee-rich-text.css' | asset_url | stylesheet_tag }}
+
 <div>
-    This is a test
+    <div class="heading">
+        {{ section.settings.custom_text_title }}
+    </div>
+    {% if section.settings.image != blank %}
+        {{section.settings.image | image_url: width: 90, height: 90, format: 'jpg'  | image_tag}}
+    {% else %}
+        Hi Stranger!
+    {% endif %}
 </div>
 
 {% schema %}
@@ -11,6 +20,11 @@
         "type": "text",
         "label": "Text",
         "default": "Title"
+    },
+    {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Test"
     }
   ],
   "presets": [
