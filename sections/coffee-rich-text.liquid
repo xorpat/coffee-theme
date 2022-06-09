@@ -1,11 +1,18 @@
 {{ 'section-coffee-rich-text.css' | asset_url | stylesheet_tag }}
 
-<div>
+<div class="coffee-rich-text">
     <div class="heading">
         {{ section.settings.custom_text_title }}
     </div>
     {% if section.settings.image != blank %}
-        {{section.settings.image | image_url: width: 90, height: 90, format: 'jpg'  | image_tag}}
+    <div class="badge-container">
+        <div class="badge">
+            {{section.settings.image | image_url: width: 100, height: 150, format: 'jpg'  | image_tag}}
+        </div>
+        <div class="badge">
+            {{section.settings.image | image_url: width: 100, height: 150, format: 'jpg'  | image_tag}}
+        </div>
+    </div>
     {% else %}
         Hi Stranger!
     {% endif %}

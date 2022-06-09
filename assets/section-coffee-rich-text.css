@@ -1,0 +1,15 @@
+.coffee-rich-text {
+    background-color: #121212;
+    text-align: center;
+}
+
+.badge-container {
+    display: flex;
+    justify-content: center;
+}
+
+.badge-container .badge {
+    padding: 0px 10px;
+    margin: 0px 10px;
+    background-color: gray;
+}
