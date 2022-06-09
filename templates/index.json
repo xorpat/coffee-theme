@@ -11,7 +11,8 @@
     "1654795648884d3fd6": {
       "type": "coffee-rich-text",
       "settings": {
-        "custom_text_title": "Title"
+        "custom_text_title": "Title",
+        "image": "shopify:\/\/shop_images\/award-g2a4f68c07_1280.png"
       }
     },
     "featured_collection": {
